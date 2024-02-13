@@ -1,0 +1,12 @@
+displayName: acl Plugin
+type: middleware
+iconPath: .assets/icon.png
+
+import: github.com/mynamecheff/TraefikACLMiddleware
+
+summary: 'testing'
+
+testData:
+  Headers:
+    X-Demo: test
+    X-URL: '{{URL}}'

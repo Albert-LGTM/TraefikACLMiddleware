@@ -1,0 +1,13 @@
+middlewares:
+  authValidationMiddleware:
+    myValidation:
+      endpointURL: http://100.113.188.36:4444/api/authenticated
+
+routers:
+  myProtectedRouter:
+    entrypoints:
+      - web
+    middlewares:
+      - authValidationMiddleware
+    service: myService
+
